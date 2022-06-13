@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaymentActivity">
+    tools:context=".FormProduct">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,12 +21,13 @@
                 android:layout_height="match_parent"
                 android:fillViewport="true">
                 <LinearLayout
-                    android:id="@+id/body_layout"
+                    android:id="@+id/bodyLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                 </LinearLayout>
+
             </ScrollView>
         </LinearLayout>
 
@@ -46,8 +47,8 @@
                 android:layout_height="50dp"
                 android:backgroundTint="@color/purple_700"
                 android:backgroundTintMode="add"
-                android:onClick="back"
-                android:text="Kembali"
+                android:onClick="submitForm"
+                android:text="Save"
                 android:textColor="@color/white"
                 android:textStyle="bold"></Button>
         </LinearLayout>
