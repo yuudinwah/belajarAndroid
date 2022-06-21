@@ -74,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
                     DocumentSnapshot doc = snapshot.getDocuments().get(i);
                     products.add(new ProductModel(doc.getId(), String.valueOf(doc.get("name")), String.valueOf(doc.get("category")), Integer.parseInt(String.valueOf(doc.get("price")))));
                 }
+//                TextView lengthText = new TextView(this);
+//                lengthText.setText(String.valueOf(products.size()));
+//
+//                menuLayout.addView(lengthText);
                 for(int i = 0; i<products.size(); i++){
                     ProductModel product = products.get(i);
 
@@ -106,6 +110,14 @@ public class MainActivity extends AppCompatActivity {
                     productLayout.setOnClickListener(new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
+                            Intent intent = new Intent(getApplicationContext(), DetailProduct.class);
+                            Bundle extras = new Bundle();
+                            extras.putString("id", product.getID());
+                            extras.putString("name", product.getName());
+                            extras.putString("category", product.getCategory());
+                            extras.putInt("price", product.getPrice());
+                            intent.putExtras(extras);
+                            startActivity(intent);
                         }
                     });
 
@@ -124,5 +136,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void insertForm(View view){
+        Intent intent = new Intent(this, FormProduct.class);
+        startActivity(intent);
+
     }
 }
