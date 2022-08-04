@@ -12,11 +12,101 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
+        <RelativeLayout
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:layout_height="140dp">
+            <LinearLayout
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <ImageView
+                    android:onClick="updateImage"
+                    android:id="@+id/userPhoto"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/cardview_shadow_start_color">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp">
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name : ">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/userEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email : ">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/profile">
+                <TextView
+                    android:id="@+id/accountBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Sisa Deposit : "></TextView>
+
+<!--                <Button-->
+<!--                    android:id="@+id/addBalance"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:backgroundTint="@color/purple_700"-->
+<!--                    android:backgroundTintMode="add"-->
+<!--                    android:onClick="insertForm"-->
+<!--                    android:text="Tambah"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textStyle="bold"></Button>-->
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingHorizontal="16dp"
+            android:id="@+id/form"
+            android:layout_below="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/provider"
+                android:id="@+id/phoneController"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Masukkan No Handphone"></EditText>
+
+            <Button
+                android:id="@+id/provider"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/purple_700"
+                android:backgroundTintMode="add"
+                android:onClick="phoneSubmit"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:textStyle="bold"></Button>
+        </RelativeLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_above="@+id/bottomContainer">
+            android:layout_below="@+id/form">
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -26,32 +116,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
                 </LinearLayout>
-
             </ScrollView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/bottomContainer"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/white"
-            android:layout_alignParentBottom="true"
-            android:paddingVertical="8dp"
-            android:paddingHorizontal="16dp"
-            android:orientation="horizontal"
-            android:layoutDirection="rtl">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="@color/purple_700"
-                android:backgroundTintMode="add"
-                android:onClick="insertForm"
-                android:text="Tambah"
-                android:textColor="@color/white"
-                android:textStyle="bold"></Button>
         </LinearLayout>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

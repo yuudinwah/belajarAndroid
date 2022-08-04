@@ -1,42 +1,33 @@
 {
   "project_info": {
-    "project_number": "536289702974",
-    "firebase_url": "https://wahyu-wahyudin-default-rtdb.firebaseio.com",
-    "project_id": "wahyu-wahyudin",
-    "storage_bucket": "wahyu-wahyudin.appspot.com"
+    "project_number": "922259224628",
+    "project_id": "lamun-my-id",
+    "storage_bucket": "lamun-my-id.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:536289702974:android:23f980c00bf256f0650d6f",
+        "mobilesdk_app_id": "1:922259224628:android:0acfe6b6226ae3c6f17261",
         "android_client_info": {
           "package_name": "com.example.myfirstapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "536289702974-of16gtbdarmbitqj4589nodi6q3ap787.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.myfirstapp",
-            "certificate_hash": "16e78e88412e5984bb446e9279cc42d60cf06691"
-          }
-        },
-        {
-          "client_id": "536289702974-tpa3h9h660vb4ub7fmkf29m5ob2frd0s.apps.googleusercontent.com",
+          "client_id": "922259224628-o6n5fvl62j1ipehee7h9t533ki2u1i5h.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCH49paSH031Zjpo4H5yrXnznTaqfesJAk"
+          "current_key": "AIzaSyBCQ-KLWWTRlHKwu57BbVlmuzC9T1tlcgA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "536289702974-tpa3h9h660vb4ub7fmkf29m5ob2frd0s.apps.googleusercontent.com",
+              "client_id": "922259224628-o6n5fvl62j1ipehee7h9t533ki2u1i5h.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -45,35 +36,35 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:536289702974:android:8fb383e3c4c84401650d6f",
+        "mobilesdk_app_id": "1:922259224628:android:055836395e12a276f17261",
         "android_client_info": {
-          "package_name": "com.wahyu.authentication"
+          "package_name": "id.my.lamun.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "536289702974-7f7ktkphm6rcf0273n13s9oe2vjn5ah8.apps.googleusercontent.com",
+          "client_id": "922259224628-4utfg01q98l37fqcir07ql3gj34udin5.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.wahyu.authentication",
-            "certificate_hash": "8d13b22e2457049bb6cd50359416c79ae9c41a07"
+            "package_name": "id.my.lamun.app",
+            "certificate_hash": "16e78e88412e5984bb446e9279cc42d60cf06691"
           }
         },
         {
-          "client_id": "536289702974-tpa3h9h660vb4ub7fmkf29m5ob2frd0s.apps.googleusercontent.com",
+          "client_id": "922259224628-o6n5fvl62j1ipehee7h9t533ki2u1i5h.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCH49paSH031Zjpo4H5yrXnznTaqfesJAk"
+          "current_key": "AIzaSyBCQ-KLWWTRlHKwu57BbVlmuzC9T1tlcgA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "536289702974-tpa3h9h660vb4ub7fmkf29m5ob2frd0s.apps.googleusercontent.com",
+              "client_id": "922259224628-o6n5fvl62j1ipehee7h9t533ki2u1i5h.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
